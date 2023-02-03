@@ -1,0 +1,10 @@
+
+
+server:
+  port: 8080
+
+data:
+  player:
+      url: https://data.latelier.co/training/tennis_stats/headtohead.json
+ 
+

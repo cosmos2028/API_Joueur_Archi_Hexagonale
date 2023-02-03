@@ -1,0 +1,21 @@
+[20/01 12:53] Gondran Nicolas
+
+a faire :
+
+Récupérer un joueur par son identifiant
+Récupérer une liste de joueurs du meilleur classé au moins bon
+Récupérer une liste de statistiques suivantes :
+IMC moyen des joueurs,Taille médian des joueurs,Pays avec le plus gros ratio de victoire
+
+
+api :
+https://data.latelier.co/training/tennis_stats/headtohead.json
+
+
+tech : 
+Java 11,+Spring Boot,Open Api,swagger,MapStruct
+
+
+Configure Eclipse in order to build MapStruct in Java projects :
+
+https://manios.org/2017/08/09/configure-eclipse-in-order-to-build-mapstruct-in-java-projects
