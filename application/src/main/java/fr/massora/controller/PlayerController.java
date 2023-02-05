@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.massora.dto.PlayerDto;
+import fr.massora.dto.PlayerStatsDto;
 import fr.massora.ports.api.PlayerServicePort;
 import io.swagger.annotations.ApiOperation;
 
@@ -31,13 +32,25 @@ public class PlayerController {
     }
 
     @ApiOperation
-    (value = "Get all player",
+    (value = "Get all player sorted Rank ",
             notes = "Obtenir toute la liste des joueur existante du meilleur classé au moins bon",
             response = PlayerDto.class)
     @GetMapping("/getAllPlayers")
     public List<PlayerDto> getAllPlayers() {
         return playerServicePort.getPlayers();
     }
+    
+
+    
+    @ApiOperation
+    (value = "Get all playerStats : IMC,médian,code_country",
+            notes = "Obtenir les statistiques sur les joeurs",
+            response = PlayerStatsDto.class)
+    @GetMapping("/getPlayerStats")
+    public PlayerStatsDto getPlayerStats() {
+        return playerServicePort.getPlayerStats();
+    }
+    
 
  
 }

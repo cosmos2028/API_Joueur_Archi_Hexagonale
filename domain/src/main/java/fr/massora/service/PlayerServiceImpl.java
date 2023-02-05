@@ -3,6 +3,7 @@ package fr.massora.service;
 import java.util.List;
 
 import fr.massora.dto.PlayerDto;
+import fr.massora.dto.PlayerStatsDto;
 import fr.massora.ports.api.PlayerServicePort;
 import fr.massora.ports.spi.PlayerPersistencePort;
 
@@ -22,5 +23,10 @@ public class PlayerServiceImpl implements PlayerServicePort {
 	@Override
 	public PlayerDto getPlayerById(Integer playerId) {
 		return playerPersistencePort.getPlayerById(playerId);
+	}
+	@Override
+	public PlayerStatsDto getPlayerStats() {
+		
+		return playerPersistencePort.getPlayerStats();
 	}
 }

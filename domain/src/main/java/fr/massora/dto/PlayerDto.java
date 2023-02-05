@@ -1,7 +1,6 @@
 package fr.massora.dto;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -21,12 +20,12 @@ public class PlayerDto {
 	
 	private String sex;
 	
-	@JsonProperty("country")
+	//@JsonProperty("country")
 	private CountryDto countryDto;
 	
 	private String picture;
 	
-	@JsonProperty("data")
+	//@JsonProperty("data")
 	private DataDto dataDto;
 	
 }
